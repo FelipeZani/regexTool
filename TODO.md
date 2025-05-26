@@ -3,7 +3,7 @@ TO DO
 ## Updates project
 - add all standard symbols
 - add dynamic symbols
-- add Matching rules <=> ask Matched examples
+- add Matching rules constructor <=> ask Matched examples
 - add Matching itself where user can verify if his regex is accepted by a rule 
 
 ## Regex symbols
