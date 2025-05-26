@@ -21,6 +21,10 @@ call_user_input("\\s",X) :- s(X).
 call_user_input("[a-z]",X) :- findall(X1, lowerAlphabeticCharacter(X1),X).
 
 call_user_input("[A-Z]",X) :- findall(X1, upperAlphabeticCharacter(X1),X).
+call_user_input(_,X):- findall(X1)
+
+%list of charcode :  "[abc]" => [91, 97,98,99 ,93]
+%thre's no - inside => member() 45 fails 
 start:-
   format("Input character: "),nl,
   read_line_to_string(user_input,Input),
